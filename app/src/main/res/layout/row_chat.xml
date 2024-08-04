@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#E8D5BC"
+    app:contentPadding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageIv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_person_image" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Person Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toEndOf="@+id/profileImageIv"
+            android:layout_toRightOf="@+id/profileImageIv"/>
+
+        <TextView
+            android:id="@+id/lastMessageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="The last Message"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toEndOf="@+id/profileImageIv"
+            android:layout_toRightOf="@+id/profileImageIv"
+            android:layout_below="@+id/nameTv"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

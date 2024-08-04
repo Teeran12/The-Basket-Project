@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">The Basket</string>
+    <string name="register">Register</string>
+    <string name="sign_up">Sign Up</string>
+
+
+    <string-array name="spinner_gender">
+        <item>Choose Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="spinner_usertype">
+        <item>"What's your role?"</item>
+        <item>Customer</item>
+        <item>Staff</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string-array name="spinner_State">
+        <item>"State"</item>
+        <item>Kedah</item>
+        <item>Perlis</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Malacca</item>
+        <item>Selangor</item>
+        <item>Pahang</item>
+        <item>Johor</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Terranganu</item>
+        <item>Kelantan</item>
+        <item>Negeri Sembilan</item>
+    </string-array>
+</resources>

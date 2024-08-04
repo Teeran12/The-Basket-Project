@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mybasket"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyBasket"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+        </activity>
+        <activity android:name=".activities.MonthlyAnalytics"
+            android:exported="false" />
+        <activity android:name=".activities.ChatViewActivity" />
+        <activity android:name=".activities.ChatActivity" />
+        <activity android:name=".activities.QRscannerActivity" />
+        <activity android:name=".activities.OrderDetailsAdminActivity" />
+        <activity android:name=".activities.ShopReviewsActivity" />
+        <activity android:name=".activities.WriteReviewActivity" />
+        <activity android:name=".activities.OrderDetailsCustomerActivity" />
+        <activity
+            android:name=".activities.ShopDetailsActivity"
+            android:windowSoftInputMode="stateHidden" /> <!-- hide keyboard by default -->
+        <activity android:name=".activities.CustomerRegister" />
+        <activity android:name=".activities.ForgotPassword" />
+        <activity android:name=".activities.editProduct" />
+        <activity android:name=".activities.ProductDetails" />
+        <activity android:name=".activities.adminMain" />
+        <activity android:name=".activities.Add_product" />
+        <activity android:name=".activities.EditProfileCustomer" />
+        <activity android:name=".activities.EditProfileAdmin" />
+        <activity android:name=".activities.AdminRegister" />
+        <activity android:name=".activities.customerMain" />
+        <activity android:name=".activities.LoginActivity"/>
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.MainActivity" />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
